@@ -151,7 +151,39 @@ header .row {
     align-items: center;
     justify-content: space-between;
 }
-
+element.style {
+}
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: #243e63;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+:host, :root
+Specificity: (0,1,0)
+ {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+}
+:host, :root {
+    --fa-font-regular: normal 400 1em / 1 "Font Awesome 6 Free";
+}
+<style>
+:host, :root {
+    --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em / 1 "Font Awesome 6 Brands";
+}
 
 /* 
 
@@ -176,7 +208,91 @@ FEATURES ↓
 QUALITY WORK ↓
 
 */
+.row
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
 
+
+width: 50%;
+display: flex;
+flex-direction: column;
+ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#quality .btn {
+    margin-top: 32px;
+}
+.btn {
+    background-color: #6415ff;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 500px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+button {
+    appearance: auto;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-variant-position: ;
+    font-variant-emoji: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    font-optical-sizing: ;
+    font-size-adjust: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ;
+    font-language-override: ;
+    text-rendering: auto;
+    color: button;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: button;
+    margin: 0em 0em 0em 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+
+<style>
+:host, :root {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+}
+<style>
+:host, :root {
+    --fa-font-regular: normal 400 1em / 1 "Font Awesome 6 Free";
+}
+<style>
+:host, :root {
+    --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em / 1 "Font Awesome 6 Brands";
+}
 
 #quality .row {
     display: flex;
@@ -424,3 +540,23 @@ figure {
     --fa-style-family-brands: "Font Awesome 6 Brands";
     --fa-font-brands: normal 400 1em / 1 "Font Awesome 6 Brands";
 }
+.container
+Padding: 80px 0;
+
+.row
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+
+
+.services
+display: flex;
+flex-wrap: wrap;
+
+.service
+display: flex;
+width: calc(100%/3)
+
+.service__description
+display: flex;
+flex-direction: column;
