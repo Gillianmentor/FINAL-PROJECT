@@ -478,7 +478,7 @@ position: relative;
     font-family: "Inter", sans-serif;
     color: #243e63;
 }
-path[Attributes Style] {
+.path[Attributes Style] {
     d: path("M 153.6 -239 C 199.1 -209.8 236 -167.2 258.4 -118 C 280.9 -68.9 288.9 -13.1 281.2 40.4 C 273.5 93.9 250.1 145.2 214.7 186.1 C 179.3 226.9 131.9 257.4 80 272.6 C 28.2 287.8 -28.2 287.8 -80 272.6 C -131.9 257.4 -179.3 226.9 -214.7 186.1 C -250.1 145.2 -273.5 93.9 -281.2 40.4 C -288.9 -13.1 -280.9 -68.9 -258.4 -118 C -236 -167.2 -199.1 -209.8 -153.6 -239 C -108.1 -268.3 -54.1 -284.1 0 -284.1 C 54.1 -284.1 108.1 -268.3 153.6 -239 Z");
     fill: rgb(80, 17, 204);
 }
@@ -498,12 +498,132 @@ user agent stylesheet
 }
 /* FOOTER */
 
-footer {
-    padding: 96px 32px;
-    background-color: rgb(100, 21, 255);
-    margin-bottom: -32px;
-    position: relative;
-    overflow: hidden;
+
+.footer {
+  padding: 96px 32px;
+  background-color: rgb(100, 21, 255); /* Vibrant purple */
+  margin-bottom: -32px;
+  position: relative;
+    z-index: 1;
+  overflow: hidden;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.footer__column h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.footer__column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__column ul li {
+  margin-bottom: 8px;
+}
+
+.footer__column ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer__column ul li a:hover {
+  color: #d1c4ff;
+}
+
+.footer__divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 32px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer__branding {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer__logo {
+  background-color: white;
+  color: rgb(100, 21, 255);
+  border-radius: 50%;
+  padding: 8px 12px;
+  font-weight: bold;
+}
+
+.footer__company {
+  color: white;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  color: white;
+  margin-top: 16px;
+}
+
+.footer__socials a {
+  margin-left: 16px;
+}
+
+.footer__socials img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1); /* Makes icons white */
+  transition: transform 0.3s;
+}
+
+.footer__socials img:hover {
+  transform: scale(1.1);
+}
+
+.footer__blob--1,
+.footer__blob--2 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  z-index: 0;
+}
+
+.footer__blob--1 {
+  top: -100px;
+  left: -100px;
+}
+
+.footer__blob--2 {
+  bottom: -100px;
+  right: -100px;
 }
 
 /* MOBILE RESPONSIVENESS */
