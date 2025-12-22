@@ -413,7 +413,7 @@ position: relative;
 .plan__button:hover {
   background-color: #4b0cfc;  /* Change from rgb(129 230 217) */
 }
-.plan:nth-child(3) .plan__stripe, .plan:nth-child(3) .plan__button {
+.plan:nth-child(4) .plan__stripe {
     position: absolute;
     top: 0;
     left: 0;
@@ -422,7 +422,7 @@ position: relative;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     color: #f7fafc;
-    background:linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    background:linear-gradient(115deg,rgb(245,101,101)0%,rgb(254,178,178)100%);
 }
 
 
@@ -461,11 +461,40 @@ position: relative;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 
-
-
+}
+.plan:nth-child(2) .plan__button {
+  color: rgb(247, 250, 252);
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+color: rgb(247, 250, 252);
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
 }
 
+.plan:nth-child(3) .plan__button {
+  color: rgb(100, 21, 255);
+    background-color: rgb(247, 250, 252);
+}
 
+.plan:nth-child(4) .plan__button {
+  color: rgb(247, 250, 252);
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+Victor Alves 8:12 AM
+.plan:nth-child(2) .plan__button {
+  color: rgb(247, 250, 252);
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan:nth-child(3) .plan__button {
+  color: rgb(100, 21, 255);
+    background-color: rgb(247, 250, 252);
+}
+
+.plan:nth-child(4) .plan__button {
+  color: rgb(247, 250, 252);
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
 /* TESTIMONIALS */
 
 
@@ -517,6 +546,29 @@ user agent stylesheet
 }
 /* FOOTER */
 
+.footer__blob--1,
+.footer__blob--2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  z-index: 0;
+}
+
+.footer__blob--1 {
+  top: -20px;
+  left: -20px;
+}
+
+.footer__blob--2 {
+  bottom: -20px;
+  right: -20px;
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
 
 .footer {
   padding: 96px 32px;
@@ -627,23 +679,7 @@ user agent stylesheet
   transform: scale(1.1);
 }
 
-.footer__blob--1,
-.footer__blob--2 {
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  z-index: 0;
-}
 
-.footer__blob--1 {
-  top: -100px;
-  left: -100px;
-}
-
-.footer__blob--2 {
-  bottom: -100px;
-  right: -100px;
-}
 
 /* MOBILE RESPONSIVENESS */
 
