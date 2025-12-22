@@ -392,9 +392,17 @@ position: relative;
 .plan__middle,.plan__bottom,.plan__top {
     padding: 24px 0;
 }
-
-
-
+.plan:nth-child(3) {
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+.plan:nth-child(2) .plan__stripe, .plan:nth-child(1) .plan__button {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+.plan:nth-child(1) .plan__stripe, .plan:nth-child(1) .plan__button {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
 .plan__button:hover {
   background-color: #4b0cfc;  /* Change from rgb(129 230 217) */
 }
@@ -433,6 +441,7 @@ position: relative;
     font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+
 
 
 }
