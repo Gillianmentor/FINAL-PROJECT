@@ -496,6 +496,22 @@ Victor Alves 8:12 AM
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 /* TESTIMONIALS */
+.testimonial-wrapper {
+  display: flex;
+  width: calc(100%/2)
+
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.testimonial-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+
 
 
 @media (max-width: 1280px) {
@@ -507,7 +523,12 @@ Victor Alves 8:12 AM
 .testimonials__img, .testimonials__description {
     width: 50%;
 }
-
+.fa-star {
+    color: rgb(246 173 85);
+    display: inline-block;
+    height: 1.25rem;
+    width: 1.25rem;
+}
 
 .testimonials__img, .testimonials__description {
     width: 50%;
@@ -544,6 +565,13 @@ user agent stylesheet
     color: rgb(80 17 204);
     opacity: 0.5;
 }
+.start_container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgb(10, 10, 255); 
+    border-radius: 8px; padding: 96px 0; }
+    
 /* FOOTER */
 
 .footer__blob--1,
