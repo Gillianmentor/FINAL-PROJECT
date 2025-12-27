@@ -507,7 +507,7 @@ Victor Alves 8:12 AM
 }
 
 .testimonial-image {
-  flex: 1;
+ 
   max-width: 50%;
 }
 
@@ -614,7 +614,7 @@ user agent stylesheet
 
 .footer__blob--1{
     position: absolute;
-    top: -20px;
+    top: -220px;
     left: -20px;
     width: 20rem;
     transform: translate(-5rem, 8rem);
@@ -623,7 +623,7 @@ user agent stylesheet
 }
 .footer__blob--2{
     position: absolute;
-    bottom: 0px;
+    bottom: -400px;
     right: 0px;
     height: 20rem;
     width: 20rem;
