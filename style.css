@@ -47,6 +47,23 @@ img {
 
 /* NAVBAR */
 
+nav a {
+  text-decoration: none;
+  color: #243e63;
+  transition: text-decoration 300ms ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: #6415FF;
+  text-underline-offset: 2px; /* optional: adjust spacing */
+}
+
+
+
+
+
+
 nav {
     display: flex;
     padding-top: 32px;
@@ -610,6 +627,27 @@ user agent stylesheet
     justify-content: flex-end;
 }
 
+
+
+
+.start__button:nth-child(1):hover {
+  background-color: #C53030; /* deeper orange-red on hover */
+}
+
+
+.start__button:nth-child(1):hover {
+  background-color: #C53030; /* deeper orange-red on hover */
+}
+
+
+
+.start__button:nth-child(2):hover {
+  background-color: white;
+  color: rgb(10, 10, 255); /* or whatever your section background is */
+  border: 2px solid white;
+  transition: all 300ms ease;
+}
+
 /* FOOTER */
 
 .footer__blob--1{
@@ -747,9 +785,6 @@ user agent stylesheet
   margin-top: 16px;
 }
 
-.footer__socials a {
-  margin-left: 16px;
-}
 
 .footer__socials img {
   width: 24px;
@@ -768,6 +803,43 @@ user agent stylesheet
     font-family: "Inter", sans-serif;
     color: #243e63;
 }
+
+.footer__logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: #6415FF; /* or your footer background */
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 8px; /* square with rounded corners */
+  margin-right: 12px;
+}
+
+.footer__socials a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: #6415FF;
+  border-radius: 50%;
+  font-size: 20px;
+  margin-left: 16px;
+  transition: background-color 300ms ease, transform 300ms ease;
+}
+
+.footer__socials a:hover {
+  background-color: #F56565;
+  color: white;
+  transform: scale(1.1);
+}
+
+
+
 
 
 /* MOBILE RESPONSIVENESS */
