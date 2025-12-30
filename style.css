@@ -28,7 +28,13 @@ body {
 .container {
     padding: 96px 0;
 }
-
+h1 {
+    font-family: 'Inter', system-ui;
+    font-size: 48px;
+    font-weight: 900;
+    color: #1A202C;
+    line-height: 1.25;
+}
 .purple {
     color: #6415ff;
 }
@@ -61,9 +67,6 @@ nav a:hover {
 
 
 
-
-
-
 nav {
     display: flex;
     padding-top: 32px;
@@ -72,6 +75,7 @@ nav {
 .nav__row {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .nav__logo {
@@ -84,6 +88,10 @@ nav {
 .nav__logo img {
     width: 40px;
     height: 40px;
+}
+.nav__links {
+    display: flex;
+    margin-left: 200px;
 }
 
 .nav__link {
@@ -483,9 +491,8 @@ position: relative;
   color: rgb(247, 250, 252);
   background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
 }
-color: rgb(247, 250, 252);
-  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
-}
+
+
 
 .plan:nth-child(3) .plan__button {
   color: rgb(100, 21, 255);
@@ -497,7 +504,7 @@ color: rgb(247, 250, 252);
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
-Victor Alves 8:12 AM
+
 .plan:nth-child(2) .plan__button {
   color: rgb(247, 250, 252);
   background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
@@ -513,21 +520,56 @@ Victor Alves 8:12 AM
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 /* TESTIMONIALS */
+
 .testimonial-wrapper {
   display: flex;
-  width: calc(100%/2)
-
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 2rem;
+  gap: 2rem;
 }
-
 .testimonial-image {
  
-  max-width: 50%;
+  max-width: 100%;
+}
+.testimonial_para {
+  font-size: 1.1rem; /* Try 1.1–1.2rem for better readability */
+  line-height: 1.6;  /* Adds vertical space between lines */
+  margin-bottom: 1rem; /* Adds space below the paragraph */
+}
+.testimonial_author {
+  margin-top: 1rem;   /* Adds space above the stars */
+  margin-bottom: 1rem; /* Adds space below the stars */
+  display: flex;
+  align-items: center;
+  gap: 0.3rem; /* Adds space between each star */
 }
 
+.testimonial_name {
+  margin-right: 0.5rem; /* Pushes stars away from the name */
+  font-weight: bold;
+}
+
+.section_tag {
+  font-size: 1.2rem; /* Slightly larger than default */
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.section_title {
+  font-size: 2.5rem; /* Increase from default, try 2.5–3rem */
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.testimonial-wrapper {
+  max-width: 1000px; /* Increase from 800px */
+  padding: 3rem; /* More breathing room */
+}
 
 
 
@@ -573,11 +615,11 @@ Victor Alves 8:12 AM
     font-family: "Inter", sans-serif;
     color: #243e63;
 }
-.path[Attributes Style] {
+/* .path[Attributes Style] {
     d: path("M 153.6 -239 C 199.1 -209.8 236 -167.2 258.4 -118 C 280.9 -68.9 288.9 -13.1 281.2 40.4 C 273.5 93.9 250.1 145.2 214.7 186.1 C 179.3 226.9 131.9 257.4 80 272.6 C 28.2 287.8 -28.2 287.8 -80 272.6 C -131.9 257.4 -179.3 226.9 -214.7 186.1 C -250.1 145.2 -273.5 93.9 -281.2 40.4 C -288.9 -13.1 -280.9 -68.9 -258.4 -118 C -236 -167.2 -199.1 -209.8 -153.6 -239 C -108.1 -268.3 -54.1 -284.1 0 -284.1 C 54.1 -284.1 108.1 -268.3 153.6 -239 Z");
     fill: rgb(80, 17, 204);
 }
-user agent stylesheet
+user agent stylesheet */
 :not(svg) {
     transform-origin: 0px 0px;
 }
@@ -677,10 +719,10 @@ user agent stylesheet
     color: #243e63;
 }
 
-.path[Attributes Style] {
+/* .path[Attributes Style] {
     d: path("M 153.6 -239 C 199.1 -209.8 236 -167.2 258.4 -118 C 280.9 -68.9 288.9 -13.1 281.2 40.4 C 273.5 93.9 250.1 145.2 214.7 186.1 C 179.3 226.9 131.9 257.4 80 272.6 C 28.2 287.8 -28.2 287.8 -80 272.6 C -131.9 257.4 -179.3 226.9 -214.7 186.1 C -250.1 145.2 -273.5 93.9 -281.2 40.4 C -288.9 -13.1 -280.9 -68.9 -258.4 -118 C -236 -167.2 -199.1 -209.8 -153.6 -239 C -108.1 -268.3 -54.1 -284.1 0 -284.1 C 54.1 -284.1 108.1 -268.3 153.6 -239 Z");
     fill: rgb(80, 17, 204);
-}
+} */
 
 
 
