@@ -640,8 +640,12 @@ header .row {
 .testimonial-image {
   width: 100%;
   max-width: 48%;
+      font-size: 24px;
+    color: #6030b1;
+    margin: 0 12px;
+    font-weight: bold;
 }
-.
+
 .testimonial_para {
   font-size: 1.1rem; /* Try 1.1–1.2rem for better readability */
   line-height: 1.6; /* Adds vertical space between lines */
