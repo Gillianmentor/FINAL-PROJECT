@@ -230,7 +230,7 @@ header .row {
   align-items: center;
   justify-content: space-between;
 }
-header ended here
+----------------------------------------------------------------------------------------------header ended here
 /* Space between cards */
 #features .row__narrow {
   display: flex;
@@ -239,18 +239,18 @@ header ended here
 }
 
 .features {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 32px;
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px; /* adds breathing room between cards */
 }
 
-
 /* Card sizing: 3 per row on desktop */
-.feature { display: flex; align-items: flex-start;
-   padding: 0 16px; }
+.feature {
+  display: flex;
+  width: calc((100% - 48px) / 3); /* accounts for the 24px gaps */
+  padding: 16px 0;
+}
 
-   
 /* Icon column (from earlier) */
 .feature__img--wrapper {
   width: 64px;
@@ -275,7 +275,7 @@ header ended here
 }
 
 .feature__title {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -307,6 +307,46 @@ header ended here
   .feature__text {
     max-width: none; /* full width on phones */
   }
+}
+
+
+/* COMMON SECTION STYLES */
+
+.section__tag {
+  font-size: 16px;
+  color: #6415ff;
+  letter-spacing: 1.6px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section__title {
+  font-size: 48px;
+  font-weight: 900;
+  color: rgb(36, 62, 99);
+  line-height: 1.5;
+  margin: 16px 0;
+  letter-spacing: 0.025em;
+}
+
+#features .section__title,
+#pricing .section__title {
+  text-align: center;
+}
+
+/* BUTTONS */
+
+.btn {
+  background-color: #6415ff;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 500px;
+
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  transition: all 300ms ease;
+  cursor: pointer;
 }
 
 
